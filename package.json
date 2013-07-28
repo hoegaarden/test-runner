@@ -1,0 +1,12 @@
+{
+  "name": "test-runner",
+  "version": "0.0.1",
+  "description": "simple test runner",
+  "scripts": {
+    "install" : "[ -z \"$npm_config_global\" -o \"$npm_config_global\" = \"false\" ] && ln -sf -t ../../test/ ../node_modules/.bin/test-runner" ,
+    "uninstall": "[ -r '../../test/test-runner' ] && rm -f '../../test/test-runner' || true"
+  },
+  "bin" : "./test-runner.sh",
+  "author": "Hannes Hörl <hannes.hoerl@snowreporter.com>",
+  "license": "BSD"
+}
